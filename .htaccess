@@ -1,0 +1,9 @@
+
+# se la richiesta non è a un file specifico
+#se la richiesta non è a una cartella specifica
+#allora reindirizza a index.php senza mostrare il redirect [L] "last" (mostrando il redirect [R])
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d     
+RewriteRule ^ index.php [L]

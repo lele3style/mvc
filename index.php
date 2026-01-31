@@ -1,15 +1,23 @@
 <?php
 
+use Emmanuele\MVC\Core\Controller;
+use Emmanuele\MVC\Core\Router;
+
 require_once __DIR__ . '/vendor/autoload.php';
-echo '<h1>Autoload</h1>';
+/*
+SOC - Separation Of Concept (separazione dei compiti)
 
-use \Emmanuele\MVC\Core\Controller;
-use \Emmanuele\MVC\Core\Model;
-use \Emmanuele\MVC\Core\Exception\NotFoundException;
+Model       - recupero/maipolazione dei dati
+View        - presentazione
+Controller  - invoca il Model e li passa alla Vista
 
-echo '<br>';
-new Controller;
-echo '<br>';
-new Model;
-echo '<br>';
-new NotFoundException;
+risponde ora alle url:
+ - /
+ - /contatti
+ - /qualunque altra va alla 404
+*/
+
+
+$controller = new Controller(__DIR__);
+$router = new Router($controller,'');
+$router->resolve();
