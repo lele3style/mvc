@@ -11,5 +11,7 @@
             "email": "emmauele.locati@pingsrl.it"
         }
     ],
-    "require": {}
+    "require": {
+        "monolog/monolog": "^3.10"
+    }
 }
