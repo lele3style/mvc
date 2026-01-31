@@ -59,4 +59,8 @@ var_dump( $invertito );    //inverte l'ordine dei valori, riassegnando gli indic
 echo '<br>invertire l\'ordine degli elementi 1,2 i un array con <strong>array_reverse($reverse, true)</strong> (mantenendo gli indici originali): ';
 var_dump( array_reverse($reverse, true) );    //inverte l'ordine dei valori, mantiene gli indici
 
+
+$a = [1,2,3];
+echo '<br><br>da un array $a 1,2,3 voglio creare un array che contenga gli stessi dati più 4,5 con <strong>$b = [...$a, 4, 5]</strong> (spread operator "...", dalla php 8.1 posso mischiare anche con key=>value): ';
+echo print_r( [...$a, 4, 5], true );
 //https://www.php.net/manual/en/array.sorting.php

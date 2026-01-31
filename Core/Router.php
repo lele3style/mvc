@@ -16,6 +16,8 @@ class Router{
             call_user_func([$this->controller, 'home']);
         }else if ($_SERVER['REQUEST_URI'] === $this->prefix.'/contatti'){
             call_user_func([$this->controller, 'contatti']);
+        }else if ($_SERVER['REQUEST_URI'] === $this->prefix.'/test_array'){
+            call_user_func([$this->controller, 'testArray']);
         }else{
             call_user_func([$this->controller, '_404']);
         }

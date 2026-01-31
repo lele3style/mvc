@@ -17,6 +17,10 @@ class Controller{
         include $this->root."/views/contatti.htm";
     }
 
+    public function testArray(){
+        include $this->root."/test_array.php";
+    }
+
     public function _404(){
         include $this->root."/views/404.htm";
     }
