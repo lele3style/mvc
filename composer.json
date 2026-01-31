@@ -1,0 +1,15 @@
+{
+    "name": "emmanuele/htdocs",
+    "autoload": {
+        "psr-4": {
+            "Emmanuele\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuele",
+            "email": "emmauele.locati@pingsrl.it"
+        }
+    ],
+    "require": {}
+}
