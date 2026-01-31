@@ -1,8 +1,15 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/myFacade.php';
+echo '<h1>Autoload</h1>';
 
-$msg = 'ciao';
-echo $msg;
-myFacade::mylog($msg);
+use \Emmanuele\MVC\Core\Controller;
+use \Emmanuele\MVC\Core\Model;
+use \Emmanuele\MVC\Core\Exception\NotFoundException;
+
+echo '<br>';
+new Controller;
+echo '<br>';
+new Model;
+echo '<br>';
+new NotFoundException;

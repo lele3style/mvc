@@ -17,7 +17,7 @@ class ComposerStaticInit1266898cdacb87fd2a9380bd93f36b4d
         ),
         'E' =>
         array (
-            'Emmanuele\\Htdocs\\' => 17,
+            'Emmanuele\\MVC\\' => 14,
         ),
     );
 
@@ -30,9 +30,9 @@ class ComposerStaticInit1266898cdacb87fd2a9380bd93f36b4d
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'Emmanuele\\Htdocs\\' =>
+        'Emmanuele\\MVC\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/',
         ),
     );
 
